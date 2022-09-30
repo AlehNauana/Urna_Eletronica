@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <div class="mae">
+    <div class="titulo">
+    <h1>Justiça Eleitoral</h1>
+    </div>
+    <div class="central">
+        <label>Número:</label><br>
+        <input type="text" id="num1" style="width: 40px;" readonly>
+        <input type="text" id="num2" style="width: 40px;" readonly><br><br>
+        <button id="resul" onclick="resultado()">Resultado</button>
+        <p id="totalvotos"></p>
+        
+    </div>
+
+    <div class="botao">
+        
+        <button id="um" onclick="votar(1)">1</button>
+        <button id="dois" onclick="votar(2)">2</button>
+        <button id="tres" onclick="votar(3)">3</button><br>
+        <button id="quatro" onclick="votar(4)">4</button>
+        <button id="cinco" onclick="votar(5)">5</button>
+        <button id="seis" onclick="votar(6)">6</button><br>
+        <button id="sete" onclick="votar(7)">7</button>
+        <button id="oito" onclick="votar(8)">8</button>
+        <button id="nove" onclick="votar(9)">9</button><br>
+        <button id="zero" onclick="votar(0)">0</button><br><br>
+        <button id="branco" onclick="branco()">BRANCO</button>
+        <button id="corrige" onclick="corrige()">CORRIGE</button>
+        <button id="confirma" onclick="confirma()">CONFIRMA</button><br><br>
+    </div>
+    
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
